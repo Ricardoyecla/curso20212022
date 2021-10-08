@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Hacer un programa que este pidiendo nombres de alumnos mientras no 
+    se teclee fin.
+    Deben aparecer los nombres de los alumnos en una lista ordenada.
+    Utilizar WHILE
+    -->
+
+    <!-- Hacer un programa que cree una tabla.
+    En la cabecera estarán los nombres de las asignaturas.
+    En las filas el nombre del alumno y las notas de cada asignatura y su media
+    Los datos serán introducidos por teclado, para terminar de rellenar una fila 
+    se debe teclear fin
+    Utilizar WHILE
+    -->
+
+    <!--Igual que el anterior pero debe aparecer la media de ca-da alumno
+    Utilizar WHILE-->
+
+   <!--  <h1>Alumnos DAW</h1>
+    <ol>
+        <script>
+            let nombre;
+            nombre=prompt("introduce un nombre");
+            while (nombre.toUpperCase()!="FIN"){
+                // document.write("<li>"+nombre+"</li>")
+                document.write(`<li>${nombre}</li>`)
+                nombre=prompt("introduce un nombre");
+            }
+        </script>
+    </ol> -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Alumno</th>
+                <script>
+                    let nombre;
+                    let cuantas=0;
+                    nombre=prompt("Dombre asignatura")
+                    while(nombre!="fin"){
+                        cuantas++;
+                        document.write(`<th>${nombre}</th>`);
+                        nombre=prompt("Dombre asignatura");
+                    }
+                    document.write('</tr></thead>')
+                    document.write('<tbody>')
+                    let respuesta='si';    
+                    while (respuesta=='si'){
+                        document.write('<tr>');
+                    
+                        nombre=prompt('Dime el nombre del alumno')
+                        document.write(`<td>${nombre}</td>`);
+                        let n=0;
+                        while (cuantas>n){
+                            let nota=prompt(`Dime la nota número ${n+1}`)
+                            document.write(`<td>${nota}</td>`);
+                            n++
+                        }    
+                        document.write('</tr>');
+                        respuesta=prompt("otro alumno (si/no)")
+                    }
+                    document.write('</tbody>')
+                </script>
+    </table>
+
+</body>
+</html>

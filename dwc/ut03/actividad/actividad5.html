@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!--Realizar una web con un formulario donde puedas introducir tu nombre y
+        una ciudad seleccionandola de las siguientes: Yecla, Jumilla, Caudete.
+        Hacer con las tres opciones de bucle for
+    -->
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <label for="numero">Selecciona un número:</label>
+        <select name="numero" id="numero">
+        <script>
+           for(let n=1;n<78;n=n+2)
+                //document.write("<option value='value"+numero+"'>"+numero+"</option>")
+                document.write(`<option value='value${n}'>${n}</option>`)
+        </script>        
+        </select>
+    </form>
+</body>
+</html>
