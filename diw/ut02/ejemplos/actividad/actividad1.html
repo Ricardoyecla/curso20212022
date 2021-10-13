@@ -15,6 +15,18 @@
         #primero{
             text-transform: uppercase;
         }
+        div p{
+            font-weight: bold;
+        }
+        div > p{
+            color: green;
+        }
+        ul + a{
+            text-decoration: none;
+        }
+        ul ~ a{
+            color:yellow;
+        }
     </style>
 </head>
 <body>
@@ -39,29 +51,38 @@
 
     Poner en mayusculas el contenido de la etiqueta con id primero
     text-transform: uppercase.
-    
+    Poner dentro del div con id primero una p donde ponga "Suelto".
+    Poner dentro del contenido del label dirección un p con el contenido "suelto dos".
 
+    Queremos que los p que se encuentren dentro de los div se muestren en negrita.
+    Queremos que los p que sean hijos directos de los div se muestren verdes.
+
+    queremos quitar el adorno a los a que son hermanos directoros de un
+    ul
+    queremos mostrar en color amarillo los a que sean hermanos de un ul
     -->
     <h1>Cactividad1</h1>
     <p>Lorem ipsum dolor sit amet consectetur.</p>
     <form action="#">
         <div id="primero">
             <label for="nombre">Nombre</label><input id="nombre" type="text">
+            <p>Suelto</p>
         </div>
         <div class="resto">
             <label for="apellidos">Apellidos</label><input id="apellidos" type="text">
         </div>
         <div class="resto">
-            <label for="direccion">Direccion</label><input id="direccion" type="text">
+            <label for="direccion">Direccion<p>Suelto dos</p></label><input id="direccion" type="text">
         </div>
         <ul>
             <li>Uno</li>
             <li>Dos<p>Lorem, ipsum dolor.</p></li>
             <li>Tres</li>
         </ul>
-        
+        <p>hola</p>
         <a href="" class="resto">a.resto</a>
         <a href="" id="segundo">a#segundo</a>
+
     </form>
    
    
