@@ -9,20 +9,21 @@
 <body>
 
     <script>
-        let cadena1="ñst1";
-        let cadena2="xst2"
+    // negativo,  en alemán ä esta antes que z
+        console.log('ä'.localeCompare('z', 'es'));
+     // positivo, en sueco  ä esta después de la  z
+        console.log('ä'.localeCompare('z', 'sv')); 
+        
+        let texto1="10";
+        let texto2="a";
 
-        if (cadena1>cadena2){
-            document.write(`${cadena1} es mayor que ${cadena2}`)
-        } else {
-            document.write(`${cadena1} es menor que ${cadena2}`)
-        } 
-        document.write('<br>')
-        if (cadena1.localeCompare(cadena2,'es')){
-            document.write(`${cadena1} es mayor que ${cadena2}`)
-        } else {
-            document.write(`${cadena1} es menor que ${cadena2}`)
-        } 
+        console.log(texto1.localeCompare(texto2, 'es'));
+        if (texto1>texto2){
+            console.log(`${texto1} es mayor que ${texto2}`)
+        }else{
+            console.log(`${texto1} es menor que ${texto2}`)
+        }
+        console.log(texto1.localeCompare(texto2, 'es',{sensitivity:'base'}));
     </script>
     
 
