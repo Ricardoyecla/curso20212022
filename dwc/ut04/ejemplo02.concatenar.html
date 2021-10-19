@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cadena1="hola "
+        let cadena2="soy "
+        let cadena3="ricardo"
+
+        cadena=cadena1.concat(cadena2,cadena3);
+        document.write(cadena+'<br>')
+
+
+        document.write(cadena.repeat(5/2)+'<br>')
+
+
+        document.write(cadena.replace("o","0")+'<br>')
+        document.write(cadena.replace(/o/g,"0")+'<br>')
+
+        cadena1=prompt("Ti tu nomre")
+        cadena2=prompt("Di tu apellido")
+
+       alert(cadena1+cadena2)
+       alert(cadena1.trim()+cadena2.trim())
+
+
+       
+    </script>
+</body>
+</html>

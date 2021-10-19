@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesto 1</title>
+</head>
+<body>
+    <!--Hacer un web que nos pida una cadena y un caracter
+    debe indicar cuantas veces aparece el caracter dentro de la
+    cadena, usando indexof
+-->
+<script>
+    let palabra, contador=0, posicion,caracter;
+    
+    palabra=prompt("di una palabra");
+    caracter=prompt("di el caracter")
+    posicion=palabra.indexOf(caracter)
+    while(posicion!=-1){
+        //alert(posicion)
+        contador++;
+        posicion=palabra.indexOf(caracter,posicion+1)
+    }
+    document.write(`El carecter ${caracter} aparece ${contador} en ${palabra}`)
+</script>
+</body>
+</html>

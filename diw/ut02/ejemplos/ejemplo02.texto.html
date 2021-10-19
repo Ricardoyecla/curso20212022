@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: justify;
+            border: 1px solid red;
+        }
+        div.vertical{
+            vertical-align: middle;
+            height: 5em;
+            border: 1px solid red;
+        }
+        p.der{
+            text-indent: 15px;
+            letter-spacing: 10px;
+        }
+        p.izq{
+            text-indent: -20px;
+            letter-spacing: -5px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--Crear un caja con un div con un borde de 1px solid red
+        en su inteior debe el siguiente texto: Hola soy yo
+        debe aparecer alineado a la derecha. Propiedad text-aling
+
+        Crear otro div de la case vertical con el texto Hola soy yo y que parezca
+        centrado vertical mente en el div.
+        propiedad vertical-align, valor middle
+        crear un p con clase der,  con el texto "Estoy indentado a la derecha 15px" utilizar la propiedad
+        text-indent, con valor positivo.
+        Hacer otro p igual pero sin clase
+        Crear otro p con la clase izq, que este identado 20px a la izquierda.
+        Hacer que las letras de la palabras del p con clase der, esten separadas 10px
+        usar propiedad letter-spacing
+    -->
+</body>
+<div class="vertical">
+    <p >Hola soy yo</p>
+</div>
+<p class="der">Estoy indentado a la derecha 15px</p>
+<p >Estoy indentado a la derecha 15px</p>
+<p class="izq">Estoy indentado a la derecha 15px</p>
+
+</html>
