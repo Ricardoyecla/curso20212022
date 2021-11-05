@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Crear un mapa
+
+        const poblacion=new Map();
+
+        //Añadir elementos.
+        poblacion.set('Jumilla',31234);
+        poblacion.set('Caudete',5000).set('Bonete',5).set('Alpera',12000)
+
+        console.log(poblacion)
+
+        //Otra forma de crear
+
+        const telefonos=new Map([[643,"Orange"],[677,'Teleclable'],[611,'Interfibra']])
+        
+        // Buscar el valor de una clave
+        console.log(poblacion.get('Caudete'));
+
+        //Borrar un valor.
+
+        poblacion.delete('Caudete');
+
+        //Modificar valor
+        
+        poblacion.set('Alpera',1323412421)
+        console.log(poblacion)
+
+        // Iteradores o deconstruir
+
+        let ciudades=poblacion.keys();
+        console.log(ciudades)
+
+        let tamaño=poblacion.values()
+
+        console.log(tamaño)
+
+
+        // convertir un mapa en array
+        let array=[...poblacion]
+        console.log(array)
+        
+
+    </script>
+</body>
+</html>
