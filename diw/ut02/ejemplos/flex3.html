@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+           margin: 10px auto;
+           width: 90%;
+       }
+       header{
+           background-color: blanchedalmond;
+           display: flex;
+           padding: 1em;
+       }
+       header div{
+           background-color: burlywood;
+           padding: 1em;
+           border: 1px solid black;
+       }
+       header div:nth-child(1){
+           order: 2;
+           color: white;
+           flex-basis: 10%;
+       }
+       header :nth-child(2){
+           order: 1;
+           flex-basis: 10%;
+       }
+       header :nth-child(3){
+           order: 4;
+           flex-basis: 10%;
+           flex-grow: 2;
+       }
+       header :nth-child(4){
+           order: 3;
+           flex-basis: 10%;
+           flex-grow: 10;
+       }
+       footer{
+           background-color: lightsteelblue;
+           border: 1px solid black;
+           margin-top: 1em;
+           padding: 1em;
+       }
+       footer div{
+            background-color: burlywood;
+            border: 1px solid black;
+            padding: 1em;
+            height: 50px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                Elem1
+            </div>
+            <div>
+               Elem2
+            </div>
+            <div>
+                Elem3
+            </div>
+            <div>elem</div>
+        </header>
+        <footer>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </footer>
+    </div>
+</body>
+</html>
