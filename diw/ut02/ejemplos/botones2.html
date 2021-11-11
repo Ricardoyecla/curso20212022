@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: bisque;
+            text-align: center;
+            padding: 5px;
+            margin: 5px 2px;
+            border-radius: 6px;
+            box-shadow: 3px 3px 3px;
+        }
+        nav{
+            background-color: rgb(141, 110, 73);
+            padding: 3px;
+            margin: 0px 2px 2px 2px;
+            border-radius: 6px;
+            box-shadow: 3px 3px 3px; 
+        }
+        nav > ul > li{
+            display: inline;
+            box-shadow: 3px 3px 3px;
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+            background-color: black;
+            margin-left: 5px;
+        }
+        nav > ul > li:hover{
+            box-shadow: none;
+            color:yellow;
+        }
+        nav > ul > li > ul{
+           list-style: none;
+           position: absolute;
+           margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabecera</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Principal</li>
+            <li>Clientes
+                <ul>
+                    <li>Alta</li>
+                    <li>Baja</li>
+                    <li>Mostrar</li>
+                </ul>
+            </li>
+            <li>Proveedores</li>
+            <li>Agentes</li>
+            <li>Cerrar sesión</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let conjunto = new Set();
+
+        conjunto.add(4);
+        conjunto.add(5);
+        conjunto.add(4);
+
+        console.log(conjunto);
+
+        conjunto.add("pepe").add('adnres').add('paco');
+
+        //Otra forma de crear.
+        let lista1 = new Set([3,4,5,6,7,9])
+        console.log(lista1)
+
+        //Otra forma de crear
+        let lista2 = new Set("ricardo")
+        console.log(lista2)
+
+        //Otra forma de crear        
+
+        let lista3 = new Set(["ricardo"])
+        console.log(lista3)
+
+        //Ver el tamaño de un conjunto
+        console.log(lista2.size)
+
+        //Como puedo borrar un elemento del conjunto
+
+        lista2.delete('c');
+        console.log(lista2)
+
+        //Commo borro todos los elementos
+        lista2.clear();
+        console.log(lista2)
+        //Consultar si existe un elemento
+
+        console.log(lista1.has(9)) 
+        console.log(lista1.has(19)) 
+
+
+        //Convertir conjunto en array
+
+        let array=[...lista1];
+        console.log(array);
+
+        //Recorrer el conjunto
+
+        for(let elemento of lista1){
+            console.log(`El elemento ${elemento}\n`)
+        }
+
+
+
+        array.includes(1)
+    </script>
+</body>
+</html>
